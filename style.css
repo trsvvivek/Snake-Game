@@ -1,0 +1,91 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    flex-direction: column;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+h1, h2 {
+    font-family: 'Digital-7', sans-serif;
+    font-size: 48px;
+}
+
+#gameCanvas {
+    border: 2px solid #fff;
+    background-color: black;
+}
+
+/* Animation for welcome screen */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#welcome-message {
+    animation: fadeIn 3s;
+}
+
+#mobile-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+#mobile-controls button {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#mobile-controls button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#gameCanvas {
+    border: 2px solid #fff;
+    background-image: url('your-background-image.jpg'); /* Path to your image */
+    background-size: cover;
+    background-position: center;
+}
+#exit-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#exit-btn:hover {
+    background-color: #ff3333;
+}

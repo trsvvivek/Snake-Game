@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="welcome-screen">
+        <h1 id="welcome-message">Welcome to Snake Game!</h1>
+    </div>
+    <div id="main-menu" class="hidden">
+        <button id="start-btn">Start Game</button>
+        <button id="highscore-btn">High Score</button>
+    </div>
+    <div id="difficulty-screen" class="hidden">
+        <button id="easy-btn">Easy</button>
+        <button id="medium-btn">Medium</button>
+        <button id="hard-btn">Hard</button>
+    </div>
+    <div id="game-screen" class="hidden">
+        <button id="exit-btn">Exit</button>
+        <button id="pause-btn">Pause</button>
+        <canvas id="gameCanvas" width="600" height="400"></canvas>
+        <!-- Mobile controls for snake -->
+        <div id="mobile-controls">
+            <button id="up-btn">↑</button>
+            <button id="left-btn">←</button>
+            <button id="right-btn">→</button>
+            <button id="down-btn">↓</button>
+        </div>
+    </div>
+    <div id="game-over-screen" class="hidden">
+        <h2>Game Over</h2>
+        <button id="restart-btn">Restart</button>
+        <button id="home-btn">Home</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
